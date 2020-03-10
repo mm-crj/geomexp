@@ -1,0 +1,8 @@
+psychopy
+pandas
+wxpython
+pyyaml
+psutil
+msgpack
+gevent
+python-xlib
