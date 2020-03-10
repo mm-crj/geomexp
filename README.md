@@ -1,4 +1,4 @@
-# geom_illusion_2d Pyhon2 package
+# geomexp Python2 package
 
 ```bash
 conda install --name psychopyP2N --yes --file requirements.txt  
