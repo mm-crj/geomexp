@@ -1,4 +1,4 @@
-programs/
-!programs/*.py
-programs/1key_try.py
-programs/key_try.py
+data/
+*.pyc
+lastParams.pickle
+.iohpid
