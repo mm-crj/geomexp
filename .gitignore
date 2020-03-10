@@ -2,3 +2,4 @@ data/
 *.pyc
 lastParams.pickle
 .iohpid
+geomexp.egg-info/
