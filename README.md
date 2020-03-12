@@ -16,6 +16,8 @@ conda env create -f environment.yml
 ```bash
 pip install geomexp  
 ```
+## Installing dependencies
+The environment.yml file can be used by conda to create a environment which can run the package. *to be updated*
 
 ## Using the package
 Once the package is installed then just import it using `import geomexp` and you can then run the Muller-Lyer experiment as follows.
