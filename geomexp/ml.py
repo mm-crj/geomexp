@@ -47,6 +47,9 @@ def ml_exp():
 
 	#list of images
 	files= resource_listdir('geomexp.images.ml', '')
+	for im in files:
+		if not '.png' in im:
+			files.remove(im)
 	shuffle(files)
 
 	try:#try to get a previous parameters file
