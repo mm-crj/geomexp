@@ -1,23 +1,31 @@
 # geomexp Python2 package
 
-```bash
-conda install --name psychopyP2N --yes --file requirements.txt  
-pip install -r requirements.txt  
-conda env export > environment_droplet.yml  
-conda env create -f environment.yml
-```
+
 ## Installing the package
 
 1. Download the zip or `git clone` the repository.
 2. Unzip if you downloaded the zip file.
-3. Open a terminal and nagigate to the unzipped folder.
+3. Open a terminal and navigate to the unzipped folder.
 4. Use pip to install
 
 ```bash
 pip install geomexp  
 ```
 ## Installing dependencies
-The environment.yml file can be used by conda to create a environment which can run the package. *to be updated*
+The ``environment.yml`` file can be used by conda to create a environment which can run the package. If you have conda installed(or  [download here](https://www.anaconda.com/distribution/)) then use the following command to create an environment on top of which the package can run.
+
+```bash
+conda env create -f environment.yml
+```
+
+The method with `pip` and `requirements.txt` is not currently working.
+```bash
+conda install --name psychopyP2N --yes --file requirements.txt  
+pip install -r requirements.txt  
+conda env export > environment_droplet.yml  
+conda env create -f environment.yml
+```
+*to be updated*
 
 ## Using the package
 Once the package is installed then just import it using `import geomexp` and you can then run the Muller-Lyer experiment as follows.
