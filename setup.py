@@ -7,5 +7,6 @@ setup(name='geomexp',
       author='Mainak Mandal',
       author_email='mm.crjx@gmail.com',
       license='GNU LGPLv3',
-      packages=['geomexp']
+      packages=['geomexp'],
+      package_data={'': ['*.png']}
       )

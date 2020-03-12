@@ -1,5 +1,5 @@
-import os
-import time
+import os,time
+from pkg_resources import resource_string, resource_listdir, resource_filename
 from psychopy import core, visual, gui, data, event
 from psychopy.tools.filetools import fromFile, toFile
 from random import randint, shuffle
@@ -42,10 +42,11 @@ def ml_exp():
 	range=10.0
 
 	#images location
-	loc="images/ml/"
+	loc=resource_filename('geomexp','ml_exp_10.png').rstrip('ml_exp_10.png')+ 'images/ml/'
+
 
 	#list of images
-	files= os.listdir(loc)
+	files= resource_listdir('geomexp.images.ml', '')
 	shuffle(files)
 
 	try:#try to get a previous parameters file
@@ -65,10 +66,13 @@ def ml_exp():
 		toFile('lastParams.pickle', expInfo)#save params to file for next time
 	else:
 		pass
-
+	try:# Create target Directory
+		os.mkdir('data')
+	except:
+		pass
 	#make a text file to save data
-	fileName = expInfo['subject'] +'-'+loc.replace("/","-").rstrip(".")
-	file = open('data/'+fileName+'.csv', 'a')#append mode
+	fileName = expInfo['subject'] +'-ml.csv'
+	file = open(os.getcwd()+'/data/'+fileName, 'a')#append mode
 
 	file.write("%s,%s,%s,%s,%s\n" %(expInfo['subject'],expInfo['gender'],expInfo['age'],
 		expInfo['hand_pref'],dateStr))
@@ -89,8 +93,12 @@ def ml_exp():
 		im=loc+im
 
 		#image stimulus
-		img=visual.ImageStim(win=win,image=im, pos=[0,150],size=(400,400))
+#		try:
 
+#		except:
+#			print(' No image at '+im)
+
+		img=visual.ImageStim(win=win,image=im, pos=[0,150],size=(400,400))
 		#reference line
 		#initial deviation
 		dev=randint(-s,s)
