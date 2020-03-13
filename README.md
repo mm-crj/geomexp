@@ -12,7 +12,7 @@
 pip install geomexp  
 ```
 ## Installing dependencies
-The ``environment.yml`` file can be used by conda to create a environment which can run the package. The first line of the file will be the name of the environment. In this case it is `psychopyP2N`.
+The `environment.yml` file can be used by conda to create a environment which can run the package. The first line of the file will be the name of the environment. In this case it is `psychopyP2N`.
 
 If you have conda installed(or  [download here](https://www.anaconda.com/distribution/)) then use the following command to create an environment on top of which the package can run.
 
@@ -24,7 +24,8 @@ The command for activating the environment just created is
 ```bash
 conda activate psychopyP2N
 ```
-For further information [read here](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file).
+For further information [read here](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file).  
+
 The method with `pip` and `requirements.txt` is not currently working.
 ```bash
 conda install --name psychopyP2N --yes --file requirements.txt  
