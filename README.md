@@ -17,7 +17,7 @@ The `environment.yml` file can be used by conda to create a environment which ca
 If you have conda installed(or  [download here](https://www.anaconda.com/distribution/)) then use the following command to create an environment on top of which the package can run.
 
 ```bash
-conda env create -f environment.yml
+conda env create -f environment.yml python=2.7
 ```
 The command for activating the environment just created is
 
