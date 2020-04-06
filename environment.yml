@@ -1,4 +1,4 @@
-name: psychopyP2N1
+name: env-exp
 channels:
   - conda-forge
   - cogsci
@@ -294,4 +294,3 @@ dependencies:
   - pip:
     - numpy==1.16.6
 prefix: /home/zenith/environments/anaconda3/envs/psychopyP2N
-
