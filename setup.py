@@ -1,14 +1,14 @@
 from setuptools import setup, find_packages
 
 setup(name='geomexp',
-      version='0.1',
+      version='0.2.1',
       description='2-d gemometric illusion experiments',
       url='https://github.com/mm-crj/geomexp',
       author='Mainak Mandal',
       author_email='mm.crjx@gmail.com',
       license='GNU LGPLv3',
-      long_description=open('README.md').read(),
-      long_description_content_type='text/markdown',
+#      long_description=open('README.md').read(),
+#      long_description_content_type='text/markdown',
       packages=find_packages(),
       package_data={'': ['*.png']},
       python_requires='<= 2.8',
@@ -20,10 +20,11 @@ setup(name='geomexp',
        install_requires=['numpy>=1.16.6',
                          'psychopy>=1.85.2',
                          'pandas>=0.24.2',
-                         'wxpython>=4.0.4',
+                         'pygments>=2.4.2'
+                         'wxPython>=4.0.4',
                          'pyyaml>=5.1.2',
                          'psutil>=5.6.3',
                          'msgpack>=1.0.0',
-                         'gevent>=1.4.0',
+                         'gevent>=1.3.0',
                          'python-xlib>=0.26']
 )
