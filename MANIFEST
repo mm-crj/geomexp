@@ -2,3 +2,8 @@
 setup.py
 geomexp/__init__.py
 geomexp/ml.py
+
+#images
+recursive-include geomexp/images/baldwin/
+recursive-includegeomexp/images/ml/
+
