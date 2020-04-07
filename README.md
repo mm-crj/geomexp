@@ -1,8 +1,8 @@
-# geomexp Python2 package
+# geomexp package :: Python :: 2.7
 
 ## To do list
-- [ ] Update MANIFEST.in and setup.py to include auxiliary files
-- [ ] create object and classes instead of using bare functions  
+- [ ] Update MANIFEST.in and setup.py to include auxiliary files.
+- [ ] create object and classes instead of using bare functions.  
 - [ ] Track all the used libraries and update the requirements.   
 - [x] create and upload the whole python package to PyPi(test.pypi).   
 - [x] Find a suitable freezing package for 1-click excecutable creation. Probably can use  [PyInstaller](https://www.pyinstaller.org/) as suggested [here](https://hackernoon.com/the-one-stop-guide-to-easy-cross-platform-python-freezing-part-1-c53e66556a0a)  
@@ -10,14 +10,13 @@
 
 ## Installing the package
 
-1. Download the zip or `git clone` the repository.
-2. Unzip if you downloaded the zip file.
-3. Open a terminal and navigate to the unzipped folder.
-4. Use pip to install
+1. The package is up on PyPi, so use pip to install
 
 ```bash
 pip install geomexp  
 ```
+The installation of dependencis shouldn not be necessery. Use only if you run into trouble with dependencies.
+
 ## Installing dependencies
 The `environment.yml` file can be used by conda to create a environment which can run the package. The first line of the file will be the name of the environment. In this case it is `psychopyP2N`.
 
