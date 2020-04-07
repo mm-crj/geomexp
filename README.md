@@ -1,9 +1,9 @@
 # geomexp package :: Python :: 2.7
 
 ## To do list
-- [ ] Update MANIFEST.in and setup.py to include auxiliary files.
 - [ ] create object and classes instead of using bare functions.  
-- [ ] Track all the used libraries and update the requirements.   
+- [ ] Track all the used libraries and update in requirements.txt and environment.yml.   
+- [x] Update MANIFEST.in and setup.py to include auxiliary files.
 - [x] create and upload the whole python package to PyPi(test.pypi).   
 - [x] Find a suitable freezing package for 1-click excecutable creation. Probably can use  [PyInstaller](https://www.pyinstaller.org/) as suggested [here](https://hackernoon.com/the-one-stop-guide-to-easy-cross-platform-python-freezing-part-1-c53e66556a0a)  
 - [ ] Test the v0.1 executable for windows.
