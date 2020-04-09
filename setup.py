@@ -1,14 +1,22 @@
 from setuptools import setup, find_packages
+from codecs import open
+from os import path
+
+here = path.abspath(path.dirname(__file__))
+
+with open(path.join(here, 'README.md'), encoding='utf-8') as f:
+    long_description = f.read()
 
 setup(name='geomexp',
-      version='0.2.2',
+      version='0.2.3',
       description='2-d gemometric illusion experiments',
       url='https://github.com/mm-crj/geomexp',
       author='Mainak Mandal',
       author_email='mm.crjx@gmail.com',
       license='GNU LGPLv3',
+      long_description=long_description,
 #      long_description=open('README.md').read(),
-#      long_description_content_type='text/markdown',
+      long_description_content_type='text/markdown',
       packages=find_packages(exclude=['build', 'docs', 'templates']),
       package_data={
         'data':
@@ -64,18 +72,20 @@ setup(name='geomexp',
       'License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)',
       'Programming Language :: Python',
       'Programming Language :: Python :: 2.7',
-      'Operating System :: Microsoft :: Linux',
+      'Operating System :: POSIX :: Linux',
       'Operating System :: Microsoft :: Windows',
-      'Operating System :: MacOS :: MacOS X',  
+      'Operating System :: MacOS :: MacOS X',
       ],
-       install_requires=['numpy>=1.16.6',
-                         'psychopy>=1.85.2',
-                         'pandas>=0.24.2',
-                         'pygments>=2.4.2'
-                         'wxPython>=4.0.4',
-                         'pyyaml>=5.1.2',
-                         'psutil>=5.6.3',
-                         'msgpack>=1.0.0',
-                         'gevent>=1.3.0',
-                         'python-xlib>=0.26']
+      setup_requires=['numpy>=1.16.6'],
+      install_requires=['ipython<=5.9.0',
+                        'psychopy>=1.85.2',
+                        'pandas<=0.24.2',
+                        'pygments<=2.5.2',
+                        'wxPython>=4.0.2',
+                        'PyYAML>=5.1.0',
+                        'psutil>=5.6.3',
+                        'msgpack>=1.0.0',
+                        'gevent>=1.3.0',
+                        'pyglet<=1.5.0',
+                        'python-xlib>=0.26']
 )
