@@ -48,4 +48,13 @@ pip install -r requirements.txt
 conda env export > environment_droplet.yml  
 conda env create -f environment.yml
 ```
+install requires
+- gcc
+- build-essentials
+- binutils
+- python2- setuptools
+- python2-subprocess32
+- conda install psutil
+- conda install wxPython
+- conda config --add channels anaconda 
 *to be updated*
